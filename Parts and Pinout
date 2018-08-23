@@ -1,0 +1,49 @@
+Part List
+
+Contrast 		= Trimmer 10k, 20k or 25k (contrast)
+R2 		= 220R (Led Backlight)
+R3-R6 	= 20k (20k - 50k pull up resistor) If you use of the internal pullups of the arduino, you can leave them away
+R7-R8   = 220R (2 LED's)
+Arduino Nano v3 (or clone)
+4 Buttons (12mm*12mm) Amazon,Ebay or very cheap @ aliexpress
+
+
+LCD 	= Every LCD with 2 rows of 16 signs with the following pinout should work
+
+1:	VSS (GND)
+2:	VDD (+5V)
+3:	VE  (VO contrast)
+4:	RS					Pin 7
+5:	RW					
+6:	E					Pin 6
+7:	D0
+8:	D1
+9:	D2
+10:	D3
+11:	D4					Pin 11
+12:	D5					Pin 10
+13:	D6					Pin 9
+14:	D7					Pin 8
+15:	Led A +
+16: Led A -
+
+Init for LCD in Arduino IDE:   LiquidCrystal lcd(7, 6, 11, 10, 9, 8); // RS, E, D4, D5, D6, D7
+
+Terminal block 12Pin
+Pin1:	2/D2/INT0
+Pin2:	3/D3/INT1)
+Pin3:	4/D4/PWM
+Pin4:	5/D5/PWM
+Pin5:	18/A4/SDA
+Pin6:	19/A5/SCL
+Pin7: 20/A6/Just Analog in
+Pin8: 21/A7/Just Analog in
+Pin9: 1/D1/Tx
+Pin10: 0(D0/Rx
+Pin11:	Gnd
+Pim12:	+Vin	(Can be used to power the board or to power an external device. 
+				Warning: It's the VIN Pin 1 of the Arduino. do not power the Arduino over USB and over the VIN together.
+				This could dammage your Pc!)
+				
+www.alainsprojects.com
+Testfile @ https://github.com/awall9999/Arduino-Nano-QP
