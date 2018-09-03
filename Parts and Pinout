@@ -42,7 +42,7 @@ Pin9: 1/D1/Tx
 Pin10: 0(D0/Rx
 Pin11:	Gnd
 Pim12:	+Vin	(Can be used to power the board or to power an external device. 
-				Warning: It's the VIN Pin 1 of the Arduino. do not power the Arduino over USB and over the VIN together.
+				Warning: It's the VIN Pin 1 on the Arduino. do not power the Arduino over USB and over the VIN together.
 				This could dammage your Pc!)
 				
 www.alainsprojects.com
